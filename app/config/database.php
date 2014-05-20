@@ -52,7 +52,7 @@ return array(
             'port'     => 27017,
             'username' => 'shoplite',
             'password' => 'shopliter',
-            'database' => 'toimoi'
+            'database' => 'jayonad'
         ),
 
 		'sqlite' => array(

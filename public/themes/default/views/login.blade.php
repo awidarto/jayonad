@@ -10,7 +10,8 @@
 @endif
 
 {{ Form::open(array('url' => 'login','class'=>'form-signin')) }}
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h1>{{ Config::get('site.name')}}</h1>
+        <h3 class="form-signin-heading">Please sign in</h3>
             @if (Session::get('loginError'))
                 <div class="alert alert-danger">{{ Session::get('loginError') }}</div>
                      <button type="button" class="close" data-dismiss="alert"></button>

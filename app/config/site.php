@@ -2,5 +2,5 @@
 
 return array(
     'design'=>'Developed by KickstartLab',
-    'name'=>'Toimoi Admin'
+    'name'=>'Jayon Ad Engine'
     );

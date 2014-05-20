@@ -16,6 +16,7 @@
         "alexwhitman/view-themes": "dev-master",
         "mj/breadcrumb": "dev-master",
         "knplabs/knp-snappy": "*",
+        "mj/breadcrumb": "dev-master",
         "barryvdh/laravel-snappy": "dev-master"
 	},
 	"autoload": {

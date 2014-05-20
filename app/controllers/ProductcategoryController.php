@@ -37,7 +37,7 @@ class ProductcategoryController extends AdminController {
 
         //print $this->model->where('docFormat','picture')->get()->toJSON();
 
-        $this->title = 'Product Category';
+        $this->title = 'Category';
 
         return parent::getIndex();
 

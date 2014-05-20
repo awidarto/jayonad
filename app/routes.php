@@ -10,7 +10,9 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::controller('inventory', 'InventoryController');
+Route::controller('advertiser', 'AdvertiserController');
+Route::controller('option', 'OptionController');
+Route::controller('adinventory', 'AdinventoryController');
 Route::controller('document', 'DocumentController');
 Route::controller('property', 'PropertyController');
 Route::controller('products', 'ProductsController');

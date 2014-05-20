@@ -12,24 +12,15 @@
 
         <li><a href="{{ URL::to('dashboard') }}" {{ sa('dashboard') }} >Dashboard</a></li>
 
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Products
-                <b class="caret"></b>
-              </a>
-            <ul class="dropdown-menu">
-                <li><a href="{{ URL::to('products') }}" {{ sa('products') }} >Catalog</a></li>
-                <li><a href="{{ URL::to('productcategory') }}" {{ sa('productcategory') }} >Category</a></li>
-            </ul>
-        </li>
-
-        <li><a href="{{ URL::to('inventory') }}" {{ sa('inventory') }} >Inventory</a></li>
+        <li><a href="{{ URL::to('adinventory') }}" {{ sa('adinventory') }} >Ads</a></li>
+        <li><a href="{{ URL::to('productcategory') }}" {{ sa('productcategory') }} >Category</a></li>
         <li><a href="{{ URL::to('outlet') }}" {{ sa('outlet') }} >Outlets</a></li>
 
-        <li><a href="{{ URL::to('transaction') }}" {{ sa('transaction') }} >Transactions</a></li>
+        <li><a href="{{ URL::to('transaction') }}" {{ sa('transaction') }} >Traffic</a></li>
 
-        <li><a href="{{ URL::to('buyer') }}" {{ sa('buyer') }} >Buyers</a></li>
-        <li><a href="{{ URL::to('user') }}" {{ sa('user') }} >Admins</a></li>
+        <li><a href="{{ URL::to('advertiser') }}" {{ sa('advertiser') }} >Advertisers</a></li>
+
+        <li><a href="{{ URL::to('audience') }}" {{ sa('audience') }} >Audience</a></li>
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Reports
@@ -40,6 +31,20 @@
                 <li><a href="{{ URL::to('report/activity') }}" {{ sa('report/activity') }} >Activity</a></li>
             </ul>
         </li>
+
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                System
+                <b class="caret"></b>
+              </a>
+            <ul class="dropdown-menu">
+                <li><a href="{{ URL::to('user') }}" {{ sa('user') }} >Admins</a></li>
+                <li><a href="{{ URL::to('option') }}" {{ sa('option') }} >Options</a></li>
+            </ul>
+        </li>
+
+        {{--
+
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Site Content
@@ -53,5 +58,6 @@
                 <li><a href="{{ URL::to('content/menu') }}" {{ sa('content/menu') }} >Menu</a></li>
             </ul>
         </li>
+        --}}
     @endif
 </ul>

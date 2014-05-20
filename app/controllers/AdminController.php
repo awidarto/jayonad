@@ -532,13 +532,15 @@ class AdminController extends Controller {
 
 		$form = $this->form;
 
+        $title = ($this->title == '')?Str::singular($this->controller_name):$this->title;
+
 		return View::make($controller_name.'.'.$this->form_add)
 					->with('back',$controller_name)
                     ->with('auxdata',$data)
 					->with('form',$form)
 					->with('submit',$controller_name.'/add')
 					->with('crumb',$this->crumb)
-					->with('title','New '.Str::singular($this->controller_name));
+					->with('title','New '.$title);
 
 	}
 
@@ -621,11 +623,13 @@ class AdminController extends Controller {
 
 		//$this->crumb->add(strtolower($this->controller_name).'/edit/'.$id,$id,false);
 
+        $title = ($this->title == '')?Str::singular($this->controller_name):$this->title;
+
 		return View::make(strtolower($this->controller_name).'.'.$this->form_edit)
 					->with('back',$controller_name)
 					->with('formdata',$population)
 					->with('submit',strtolower($this->controller_name).'/edit/'.$id)
-					->with('title','Edit '.Str::singular($this->controller_name));
+					->with('title','Edit '.$title);
 
 	}
 
